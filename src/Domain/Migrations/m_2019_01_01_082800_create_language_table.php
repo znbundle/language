@@ -6,7 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 use ZnCore\Db\Migration\Base\BaseCreateTableMigration;
 use ZnCore\Db\Migration\Enums\ForeignActionEnum;
 
-class m190101_082800_create_language_table extends BaseCreateTableMigration
+class m_2019_01_01_082800_create_language_table extends BaseCreateTableMigration
 {
 
     protected $tableName = 'language';
