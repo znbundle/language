@@ -1,0 +1,22 @@
+
+{
+	"name": "znbundle/language",
+	"type": "extension",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Yamshikov Vitaliy",
+			"email": "theyamshikov@yandex.ru"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {
+		"symfony/serializer": "4.*|5.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"ZnBundle\\Language\\": "src",
+			"ZnBundle\\Language\\Tests\\": "tests"
+		}
+	}
+}
