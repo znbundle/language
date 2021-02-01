@@ -3,7 +3,6 @@
 namespace ZnBundle\Language\Domain\Repositories\Yii2;
 
 use Yii;
-use yii\web\Cookie;
 use ZnBundle\Language\Domain\Interfaces\Repositories\SwitchRepositoryInterface;
 use ZnCore\Base\Libs\I18Next\Facades\I18Next;
 
