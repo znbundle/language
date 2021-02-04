@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Language\Yii2\Widgets\Language\Assets;
 
-use ZnYii\Base\Web\Assets\BaseAsset;
+use ZnYii\Web\Assets\BaseAsset;
 
 class LanguageAsset extends BaseAsset
 {
