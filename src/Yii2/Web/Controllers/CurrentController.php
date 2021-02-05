@@ -9,7 +9,7 @@ use yii\web\Controller;
 use ZnBundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
 use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
 use ZnCore\Base\Libs\I18Next\Facades\I18Next;
-use ZnYii\Web\Widgets\Toastr\Alert;
+use ZnYii\Web\Widgets\Toastr\Toastr;
 
 class CurrentController extends Controller
 {
@@ -54,7 +54,7 @@ class CurrentController extends Controller
         if (Yii::$app->request->isPost) {
             $locale = Yii::$app->request->getQueryParam('locale');
             $this->service->setLanguage($locale);
-            Alert::create(I18Next::t('language', 'language.message.switch_success'), Alert::TYPE_SUCCESS);
+            Toastr::create(I18Next::t('language', 'language.message.switch_success'), Toastr::TYPE_SUCCESS);
         }
         return $this->redirect(Yii::$app->request->referrer);
     }
