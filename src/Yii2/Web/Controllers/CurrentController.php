@@ -6,24 +6,26 @@ use Yii;
 use yii\base\Module;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
-use ZnBundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
 use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
+use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnCore\Base\Libs\I18Next\Facades\I18Next;
-use ZnYii\Web\Widgets\Toastr\Toastr;
 
 class CurrentController extends Controller
 {
 
     private $service;
+    private $toastrService;
 
     public function __construct(
         string $id,
         Module $module, array $config = [],
-        RuntimeLanguageServiceInterface $service
+        RuntimeLanguageServiceInterface $service,
+        ToastrServiceInterface $toastrService
     )
     {
         parent::__construct($id, $module, $config);
         $this->service = $service;
+        $this->toastrService = $toastrService;
     }
 
     public function behaviors()
@@ -54,7 +56,7 @@ class CurrentController extends Controller
         if (Yii::$app->request->isPost) {
             $locale = Yii::$app->request->getQueryParam('locale');
             $this->service->setLanguage($locale);
-            Toastr::create(I18Next::t('language', 'language.message.switch_success'), Toastr::TYPE_SUCCESS);
+            $this->toastrService->success(I18Next::t('language', 'language.message.switch_success'));
         }
         return $this->redirect(Yii::$app->request->referrer);
     }
