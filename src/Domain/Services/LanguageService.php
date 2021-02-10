@@ -10,7 +10,6 @@ use ZnCore\Domain\Interfaces\Libs\EntityManagerInterface;
 class LanguageService extends BaseCrudService implements LanguageServiceInterface
 {
 
-    private $em = null;
     private $switchRepository;
     private $storageRepository;
 
@@ -19,7 +18,7 @@ class LanguageService extends BaseCrudService implements LanguageServiceInterfac
         LanguageRepositoryInterface $repository
     )
     {
-        $this->em = $em;
+        $this->setEntityManager($em);
         $this->repository = $repository;
     }
 }
