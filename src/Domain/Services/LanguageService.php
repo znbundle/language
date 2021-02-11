@@ -19,6 +19,6 @@ class LanguageService extends BaseCrudService implements LanguageServiceInterfac
     )
     {
         $this->setEntityManager($em);
-        $this->repository = $repository;
+        $this->setRepository($repository);
     }
 }
