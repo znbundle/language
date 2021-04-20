@@ -25,7 +25,11 @@ class Bundle extends BaseBundle
 
     public function yiiAdmin(): array
     {
-        return $this->yiiWeb();
+        return [
+            'modules' => [
+                'language' => __NAMESPACE__ . '\Yii2\Admin\Module',
+            ],
+        ];
     }
 
     public function migration(): array
