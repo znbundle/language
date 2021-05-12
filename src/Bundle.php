@@ -2,7 +2,10 @@
 
 namespace ZnBundle\Language;
 
+use ZnCore\Base\Helpers\DeprecateHelper;
 use ZnCore\Base\Libs\App\Base\BaseBundle;
+
+DeprecateHelper::softThrow();
 
 class Bundle extends BaseBundle
 {
