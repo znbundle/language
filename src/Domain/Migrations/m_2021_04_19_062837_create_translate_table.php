@@ -10,18 +10,18 @@ class m_2021_04_19_062837_create_translate_table extends BaseCreateTableMigratio
 {
 
     protected $tableName = 'language_translate';
-    protected $tableComment = '';
+    protected $tableComment = 'Значения переводов';
 
     public function tableSchema()
     {
         return function (Blueprint $table) {
             $table->integer('id')->autoIncrement()->comment('Идентификатор');
-            $table->string('bundle_name')->comment('');
-            $table->string('category')->comment('');
-            $table->string('lang_code')->comment('');
-            $table->string('name')->comment('');
-            $table->string('value')->comment('');
-            $table->integer('status_id')->comment('');
+            $table->string('bundle_name')->comment('Предметная область');
+            $table->string('category')->comment('Категория');
+            $table->string('lang_code')->comment('Код языка');
+            $table->string('name')->comment('Ключ');
+            $table->string('value')->comment('Значение перевода');
+            $table->integer('status_id')->comment('Статус');
 
             $table->unique(['bundle_name', 'category', 'lang_code', 'name']);
             $table
