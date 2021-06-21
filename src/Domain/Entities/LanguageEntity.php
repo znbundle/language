@@ -4,11 +4,13 @@ namespace ZnBundle\Language\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
+use ZnCore\Domain\Interfaces\Entity\EntityIdInterface;
 use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 
-class LanguageEntity implements ValidateEntityByMetadataInterface
+class LanguageEntity implements ValidateEntityByMetadataInterface, EntityIdInterface
 {
 
+    private $id = null;
     private $code = null;
     private $title = null;
     private $name = null;
@@ -24,6 +26,16 @@ class LanguageEntity implements ValidateEntityByMetadataInterface
         $metadata->addPropertyConstraint('locale', new Assert\NotBlank);
         $metadata->addPropertyConstraint('isMain', new Assert\NotBlank);
         $metadata->addPropertyConstraint('isEnabled', new Assert\NotBlank);
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id): void
+    {
+        $this->id = $id;
     }
 
     public function getCode()

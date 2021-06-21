@@ -15,6 +15,7 @@ class m_2019_01_01_082800_create_language_table extends BaseCreateTableMigration
     public function tableSchema()
     {
         return function (Blueprint $table) {
+            $table->integer('id')->autoIncrement()->comment('Идентификатор');
             $table->string('code')->comment('Код языка');
             $table->string('title')->comment('Название');
             $table->string('name')->comment('Системное имя');
@@ -25,7 +26,7 @@ class m_2019_01_01_082800_create_language_table extends BaseCreateTableMigration
             $table->unique('title');
             $table->unique('name');
             $table->unique('locale');
-            $table->primary('code');
+            $table->unique('code');
         };
     }
 
