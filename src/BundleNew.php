@@ -10,7 +10,14 @@ class BundleNew extends BaseBundle
     public function symfonyWeb(): array
     {
         return [
-            __DIR__ . '/Symfony4/Web/config/routing.php',
+            __DIR__ . '/Symfony4/Web/config/routing-switch.php',
+        ];
+    }
+
+    public function symfonyAdmin(): array
+    {
+        return [
+            __DIR__ . '/Symfony4/Web/config/routing-switch.php',
         ];
     }
 
