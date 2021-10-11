@@ -3,10 +3,15 @@
 namespace ZnBundle\Language\Domain\Enums\Rbac;
 
 use ZnCore\Base\Interfaces\GetLabelsInterface;
+use ZnCore\Contract\Rbac\Interfaces\GetRbacInheritanceInterface;
+use ZnCore\Contract\Rbac\Traits\CrudRbacInheritanceTrait;
 
-class LanguagePermissionEnum implements GetLabelsInterface
+class LanguagePermissionEnum implements GetLabelsInterface, GetRbacInheritanceInterface
 {
 
+    use CrudRbacInheritanceTrait;
+
+    const CRUD = 'oLanguageLanguageCrud';
     const ALL = 'oLanguageLanguageAll';
     const ONE = 'oLanguageLanguageOne';
     const CREATE = 'oLanguageLanguageCreate';
@@ -18,6 +23,7 @@ class LanguagePermissionEnum implements GetLabelsInterface
     public static function getLabels()
     {
         return [
+            self::CRUD => 'Язык. Полный доступ',
             self::ALL => 'Язык. Просмотр списка',
             self::ONE => 'Язык. Просмотр записи',
             self::CREATE => 'Язык. Создание',
