@@ -61,6 +61,6 @@ class CurrentController extends BaseWebController implements ControllerAccessInt
         $locale = $request->get('locale');
         $this->service->setLanguage($locale);
         $this->toastrService->success(I18Next::t('language', 'language.message.switch_success'));
-        return $this->redirectToBack($request);
+        return $this->redirectToBack($request, '/');
     }
 }
