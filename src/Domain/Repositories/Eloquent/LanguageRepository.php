@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Language\Domain\Repositories\Eloquent;
 
-use ZnLib\Db\Base\BaseEloquentCrudRepository;
+use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use ZnBundle\Language\Domain\Entities\LanguageEntity;
 use ZnBundle\Language\Domain\Interfaces\Repositories\LanguageRepositoryInterface;
 
