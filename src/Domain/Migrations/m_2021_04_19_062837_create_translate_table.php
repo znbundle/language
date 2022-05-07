@@ -27,19 +27,6 @@ class m_2021_04_19_062837_create_translate_table extends BaseCreateTableMigratio
 
             $this->addForeign($table, 'bundle_name', 'language_bundle', 'name');
             $this->addForeign($table, 'lang_code', 'language', 'code');
-
-            /*$table
-                ->foreign('bundle_name')
-                ->references('name')
-                ->on($this->encodeTableName('language_bundle'))
-                ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);
-            $table
-                ->foreign('lang_code')
-                ->references('code')
-                ->on($this->encodeTableName('language'))
-                ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);*/
         };
     }
 }
