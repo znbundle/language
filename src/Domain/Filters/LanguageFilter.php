@@ -3,7 +3,7 @@
 namespace ZnBundle\Language\Domain\Filters;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
+use ZnCore\Base\Libs\Entity\Interfaces\ValidateEntityByMetadataInterface;
 
 class LanguageFilter
 {
