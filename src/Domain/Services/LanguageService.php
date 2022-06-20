@@ -5,7 +5,7 @@ namespace ZnBundle\Language\Domain\Services;
 use Illuminate\Support\Collection;
 use ZnBundle\Language\Domain\Interfaces\Repositories\LanguageRepositoryInterface;
 use ZnBundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
-use ZnCore\Domain\Base\BaseCrudService;
+use ZnCore\Base\Libs\Service\Base\BaseCrudService;
 use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
 
 class LanguageService extends BaseCrudService implements LanguageServiceInterface
