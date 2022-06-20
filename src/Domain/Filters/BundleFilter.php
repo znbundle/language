@@ -4,10 +4,10 @@ namespace ZnBundle\Language\Domain\Filters;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Domain\Constraints\Enum;
-use ZnCore\Base\Libs\Entity\Interfaces\ValidateEntityByMetadataInterface;
+use ZnCore\Base\Libs\Validation\Interfaces\ValidationByMetadataInterface;
 use ZnSandbox\Sandbox\Status\Domain\Enums\StatusEnum;
 
-class BundleFilter implements ValidateEntityByMetadataInterface
+class BundleFilter implements ValidationByMetadataInterface
 {
 
     protected $statusId = StatusEnum::ENABLED;
