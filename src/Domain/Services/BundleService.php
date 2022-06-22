@@ -3,8 +3,8 @@
 namespace ZnBundle\Language\Domain\Services;
 
 use ZnBundle\Language\Domain\Interfaces\Services\BundleServiceInterface;
-use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Base\Libs\Service\Base\BaseCrudService;
+use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnCore\Domain\Service\Base\BaseCrudService;
 use ZnBundle\Language\Domain\Entities\BundleEntity;
 
 class BundleService extends BaseCrudService implements BundleServiceInterface
