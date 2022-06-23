@@ -31,7 +31,7 @@ $attributes = [
         'attributeName' => 'title',
         'value' => function(\ZnBundle\Language\Domain\Entities\LanguageEntity $languageEntity) {
             $title = '<i class="flag-icon flag-icon-'.$languageEntity->getCode().'"></i> ' . $languageEntity->getTitle();
-            return \ZnCore\Base\Legacy\Yii\Helpers\Html::a($title, ['/language/language/view', 'id' => $languageEntity->getId()]);
+            return \ZnLib\Web\Helpers\Html::a($title, ['/language/language/view', 'id' => $languageEntity->getId()]);
         },
         'format' => 'html',
     ],

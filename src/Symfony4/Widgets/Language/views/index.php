@@ -11,7 +11,7 @@ use Illuminate\Support\Collection;
 use ZnBundle\Language\Symfony4\Widgets\Language\Assets\LanguageAsset;
 
 use ZnBundle\Language\Domain\Entities\LanguageEntity;
-use ZnCore\Base\Legacy\Yii\Helpers\Url;
+use ZnLib\Web\Helpers\Url;
 use ZnLib\Web\View\View;
 
 (new LanguageAsset())->register($this);
