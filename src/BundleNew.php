@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Language;
 
-use ZnCore\Base\Libs\Develop\Helpers\DeprecateHelper;
+use ZnCore\Base\Develop\Helpers\DeprecateHelper;
 
 //DeprecateHelper::hardThrow();
 

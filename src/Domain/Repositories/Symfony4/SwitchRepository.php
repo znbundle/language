@@ -3,7 +3,7 @@
 namespace ZnBundle\Language\Domain\Repositories\Symfony4;
 
 use ZnBundle\Language\Domain\Interfaces\Repositories\SwitchRepositoryInterface;
-use ZnCore\Base\Libs\I18Next\Facades\I18Next;
+use ZnCore\Base\I18Next\Facades\I18Next;
 
 class SwitchRepository implements SwitchRepositoryInterface
 {

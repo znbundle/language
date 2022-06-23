@@ -9,7 +9,7 @@
 use Packages\Library\Domain\Entities\BookEntity;
 use yii\web\Request;
 use yii\web\View;
-use ZnCore\Base\Libs\I18Next\Facades\I18Next;
+use ZnCore\Base\I18Next\Facades\I18Next;
 use ZnLib\Web\Widgets\Detail\DetailWidget;
 use ZnLib\Web\Widgets\Format\Formatters\LinkFormatter;
 use ZnYii\Base\Helpers\ActionHelper;

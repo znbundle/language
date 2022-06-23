@@ -8,7 +8,7 @@ use yii\filters\VerbFilter;
 use yii\web\Controller;
 use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use ZnCore\Base\Libs\I18Next\Facades\I18Next;
+use ZnCore\Base\I18Next\Facades\I18Next;
 
 class CurrentController extends Controller
 {
