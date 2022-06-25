@@ -14,7 +14,7 @@ use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnBundle\Storage\Domain\Entities\FileEntity;
 use ZnBundle\Storage\Domain\Filters\FileFilter;
 use ZnBundle\Storage\Yii2\Web\Forms\FileForm;
-use ZnCore\Base\I18Next\Facades\I18Next;
+use ZnLib\Components\I18Next\Facades\I18Next;
 use ZnLib\Web\Widgets\BreadcrumbWidget;
 use ZnYii\Web\Controllers\BaseController;
 
