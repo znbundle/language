@@ -2,8 +2,8 @@
 
 namespace ZnBundle\Language\Symfony4\Widgets\Language\Assets;
 
-use ZnLib\Web\View\Assets\BaseAsset;
-use ZnLib\Web\View\View;
+use ZnLib\Web\Components\Asset\Base\BaseAsset;
+use ZnLib\Web\Components\View\Libs\View;
 
 class LanguageAsset extends BaseAsset
 {

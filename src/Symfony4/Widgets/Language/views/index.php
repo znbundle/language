@@ -12,7 +12,7 @@ use ZnBundle\Language\Symfony4\Widgets\Language\Assets\LanguageAsset;
 
 use ZnBundle\Language\Domain\Entities\LanguageEntity;
 use ZnLib\Web\Helpers\Url;
-use ZnLib\Web\View\View;
+use ZnLib\Web\Components\View\Libs\View;
 
 (new LanguageAsset())->register($this);
 

@@ -10,8 +10,8 @@ use Packages\Library\Domain\Entities\BookEntity;
 use yii\web\Request;
 use yii\web\View;
 use ZnLib\Components\I18Next\Facades\I18Next;
-use ZnLib\Web\Widgets\Detail\DetailWidget;
-use ZnLib\Web\Widgets\Format\Formatters\LinkFormatter;
+use ZnLib\Web\Components\Widget\Widgets\Detail\DetailWidget;
+use ZnLib\Web\Components\Widget\Widgets\Format\Formatters\LinkFormatter;
 use ZnYii\Base\Helpers\ActionHelper;
 
 $this->title = $entity->getTitle();

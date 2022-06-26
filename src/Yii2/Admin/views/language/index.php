@@ -13,7 +13,7 @@ use yii\web\View;
 use ZnLib\Components\I18Next\Facades\I18Next;
 use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
 use ZnCore\Domain\DataProvider\Libs\DataProvider;
-use ZnLib\Web\Widgets\Collection\CollectionWidget;
+use ZnLib\Web\Components\Widget\Widgets\Collection\CollectionWidget;
 
 $this->title = I18Next::t('language', 'language.title');
 
@@ -57,7 +57,7 @@ $attributes = [
     ],
     [
         'formatter' => [
-            'class' => \ZnLib\Web\Widgets\Format\Formatters\ActionFormatter::class,
+            'class' => \ZnLib\Web\Components\Widget\Widgets\Format\Formatters\ActionFormatter::class,
             'actions' => [
                 'update',
                 'delete',
