@@ -14,7 +14,7 @@ use ZnBundle\User\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnLib\Components\I18Next\Facades\I18Next;
 use ZnLib\Web\Symfony4\MicroApp\BaseWebController;
 use ZnLib\Web\Symfony4\MicroApp\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\Symfony4\MicroApp\Traits\ControllerFormTrait;
+use ZnLib\Web\Components\Form\Traits\ControllerFormTrait;
 use ZnUser\Rbac\Domain\Enums\RbacRoleEnum;
 
 class CurrentController extends BaseWebController implements ControllerAccessInterface
