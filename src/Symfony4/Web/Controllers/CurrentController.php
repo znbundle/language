@@ -12,8 +12,8 @@ use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnBundle\User\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnLib\Components\I18Next\Facades\I18Next;
-use ZnLib\Web\Symfony4\MicroApp\BaseWebController;
-use ZnLib\Web\Symfony4\MicroApp\Interfaces\ControllerAccessInterface;
+use ZnLib\Web\Components\Controller\BaseWebController;
+use ZnLib\Web\Components\Controller\Interfaces\ControllerAccessInterface;
 use ZnLib\Web\Components\Form\Traits\ControllerFormTrait;
 use ZnUser\Rbac\Domain\Enums\RbacRoleEnum;
 
