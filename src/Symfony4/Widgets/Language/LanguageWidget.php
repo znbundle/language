@@ -5,7 +5,7 @@ namespace ZnBundle\Language\Symfony4\Widgets\Language;
 use ZnBundle\Language\Domain\Filters\LanguageFilter;
 use ZnBundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
 use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
-use ZnLib\Web\Components\Widget\Base\BaseWidget2;
+use ZnLib\Web\Widget\Base\BaseWidget2;
 
 class LanguageWidget extends BaseWidget2
 {

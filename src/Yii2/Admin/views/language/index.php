@@ -13,7 +13,7 @@ use yii\web\View;
 use ZnLib\Components\I18Next\Facades\I18Next;
 use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
 use ZnCore\Domain\DataProvider\Libs\DataProvider;
-use ZnLib\Web\Components\TwBootstrap\Widgets\Collection\CollectionWidget;
+use ZnLib\Web\TwBootstrap\Widgets\Collection\CollectionWidget;
 
 $this->title = I18Next::t('language', 'language.title');
 
@@ -31,7 +31,7 @@ $attributes = [
         'attributeName' => 'title',
         'value' => function(\ZnBundle\Language\Domain\Entities\LanguageEntity $languageEntity) {
             $title = '<i class="flag-icon flag-icon-'.$languageEntity->getCode().'"></i> ' . $languageEntity->getTitle();
-            return \ZnLib\Web\Components\Html\Helpers\Html::a($title, ['/language/language/view', 'id' => $languageEntity->getId()]);
+            return \ZnLib\Web\Html\Helpers\Html::a($title, ['/language/language/view', 'id' => $languageEntity->getId()]);
         },
         'format' => 'html',
     ],
@@ -57,7 +57,7 @@ $attributes = [
     ],
     [
         'formatter' => [
-            'class' => \ZnLib\Web\Components\TwBootstrap\Widgets\Format\Formatters\ActionFormatter::class,
+            'class' => \ZnLib\Web\TwBootstrap\Widgets\Format\Formatters\ActionFormatter::class,
             'actions' => [
                 'update',
                 'delete',

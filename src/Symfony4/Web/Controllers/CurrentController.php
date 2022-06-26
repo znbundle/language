@@ -12,9 +12,9 @@ use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnBundle\User\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnLib\Components\I18Next\Facades\I18Next;
-use ZnLib\Web\Components\Controller\BaseWebController;
-use ZnLib\Web\Components\Controller\Interfaces\ControllerAccessInterface;
-use ZnLib\Web\Components\Form\Traits\ControllerFormTrait;
+use ZnLib\Web\Controller\Base\BaseWebController;
+use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
+use ZnLib\Web\Form\Traits\ControllerFormTrait;
 use ZnUser\Rbac\Domain\Enums\RbacRoleEnum;
 
 class CurrentController extends BaseWebController implements ControllerAccessInterface
