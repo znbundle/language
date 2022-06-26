@@ -15,7 +15,7 @@ use ZnBundle\Storage\Domain\Entities\FileEntity;
 use ZnBundle\Storage\Domain\Filters\FileFilter;
 use ZnBundle\Storage\Yii2\Web\Forms\FileForm;
 use ZnLib\Components\I18Next\Facades\I18Next;
-use ZnLib\Web\Components\Widget\Widgets\BreadcrumbWidget;
+use ZnLib\Web\Components\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 use ZnYii\Web\Controllers\BaseController;
 
 class BundleController extends BaseController
