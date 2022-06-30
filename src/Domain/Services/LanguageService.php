@@ -27,6 +27,6 @@ class LanguageService extends BaseCrudService implements LanguageServiceInterfac
     {
         $query = $this->forgeQuery();
         $query->where('is_enabled', true);
-        return $this->all($query);
+        return $this->findAll($query);
     }
 }
