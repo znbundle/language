@@ -7,7 +7,7 @@
  * @var string $baseUrl
  */
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Language\Yii2\Widgets\Language\Assets\LanguageAsset;
 use yii\helpers\Url;
 use yii\web\View;

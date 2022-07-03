@@ -7,7 +7,7 @@
  * @var string $baseUrl
  */
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Language\Symfony4\Widgets\Language\Assets\LanguageAsset;
 
 use ZnBundle\Language\Domain\Entities\LanguageEntity;

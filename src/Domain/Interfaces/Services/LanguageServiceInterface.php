@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Language\Domain\Interfaces\Services;
 
-use Illuminate\Support\Collection;
+use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Language\Domain\Entities\LanguageEntity;
 use ZnCore\Domain\Service\Interfaces\CrudServiceInterface;
 
