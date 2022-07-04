@@ -2,7 +2,7 @@
 
 /**
  * @var View $this
- * @var Collection | LanguageEntity[] $collection
+ * @var \ZnCore\Domain\Collection\Interfaces\Enumerable | LanguageEntity[] $collection
  * @var string $language
  * @var string $baseUrl
  */
