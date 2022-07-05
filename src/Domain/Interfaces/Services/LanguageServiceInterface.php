@@ -13,5 +13,5 @@ interface LanguageServiceInterface extends CrudServiceInterface
     /**
      * @return Enumerable | LanguageEntity[]
      */
-    public function allEnabled(): Collection;
+    public function allEnabled(): Enumerable;
 }

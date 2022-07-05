@@ -2,6 +2,7 @@
 
 namespace ZnBundle\Language\Domain\Services;
 
+use ZnCore\Domain\Collection\Interfaces\Enumerable;
 use ZnCore\Domain\Collection\Libs\Collection;
 use ZnBundle\Language\Domain\Interfaces\Repositories\LanguageRepositoryInterface;
 use ZnBundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
@@ -23,7 +24,7 @@ class LanguageService extends BaseCrudService implements LanguageServiceInterfac
         $this->setRepository($repository);
     }
 
-    public function allEnabled(): Collection
+    public function allEnabled(): Enumerable
     {
         $query = $this->forgeQuery();
         $query->where('is_enabled', true);
