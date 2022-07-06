@@ -3,7 +3,7 @@
 namespace ZnBundle\Language\Domain\Services;
 
 use ZnBundle\Language\Domain\Interfaces\Services\TranslateServiceInterface;
-use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Domain\Service\Base\BaseCrudService;
 use ZnBundle\Language\Domain\Entities\TranslateEntity;
 
