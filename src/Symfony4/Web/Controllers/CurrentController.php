@@ -11,7 +11,7 @@ use ZnBundle\Language\Domain\Enums\Rbac\LanguageCurrentPermissionEnum;
 use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
-use ZnLib\Components\I18Next\Facades\I18Next;
+use ZnLib\I18Next\Facades\I18Next;
 use ZnLib\Web\Controller\Base\BaseWebController;
 use ZnLib\Web\Controller\Interfaces\ControllerAccessInterface;
 use ZnLib\Web\Form\Traits\ControllerFormTrait;
