@@ -4,7 +4,7 @@ namespace ZnBundle\Language\Domain\Interfaces\Services;
 
 use ZnBundle\Language\Domain\Entities\LanguageEntity;
 use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\Service\Interfaces\CrudServiceInterface;
+use ZnDomain\Service\Interfaces\CrudServiceInterface;
 
 interface LanguageServiceInterface extends CrudServiceInterface
 {

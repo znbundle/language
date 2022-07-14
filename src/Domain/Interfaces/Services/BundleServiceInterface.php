@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Language\Domain\Interfaces\Services;
 
-use ZnCore\Service\Interfaces\CrudServiceInterface;
+use ZnDomain\Service\Interfaces\CrudServiceInterface;
 
 interface BundleServiceInterface extends CrudServiceInterface
 {

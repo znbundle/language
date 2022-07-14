@@ -12,7 +12,7 @@ use yii\web\Request;
 use yii\web\View;
 use ZnLib\I18Next\Facades\I18Next;
 use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;
-use ZnCore\DataProvider\Libs\DataProvider;
+use ZnDomain\DataProvider\Libs\DataProvider;
 use ZnLib\Web\TwBootstrap\Widgets\Collection\CollectionWidget;
 
 $this->title = I18Next::t('language', 'language.title');

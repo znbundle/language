@@ -3,8 +3,8 @@
 namespace ZnBundle\Language\Domain\Services;
 
 use ZnBundle\Language\Domain\Interfaces\Services\TranslateServiceInterface;
-use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Service\Base\BaseCrudService;
+use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\Service\Base\BaseCrudService;
 use ZnBundle\Language\Domain\Entities\TranslateEntity;
 
 class TranslateService extends BaseCrudService implements TranslateServiceInterface

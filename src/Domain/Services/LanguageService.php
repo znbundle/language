@@ -5,8 +5,8 @@ namespace ZnBundle\Language\Domain\Services;
 use ZnBundle\Language\Domain\Interfaces\Repositories\LanguageRepositoryInterface;
 use ZnBundle\Language\Domain\Interfaces\Services\LanguageServiceInterface;
 use ZnCore\Collection\Interfaces\Enumerable;
-use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Service\Base\BaseCrudService;
+use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\Service\Base\BaseCrudService;
 
 class LanguageService extends BaseCrudService implements LanguageServiceInterface
 {
