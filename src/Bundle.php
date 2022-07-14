@@ -28,7 +28,7 @@ class Bundle extends BaseBundle
         ];
     }
 
-    public function yiiWeb(): array
+    /*public function yiiWeb(): array
     {
         return [
             'modules' => [
@@ -44,7 +44,7 @@ class Bundle extends BaseBundle
                 'language' => __NAMESPACE__ . '\Yii2\Admin\Module',
             ],
         ];
-    }
+    }*/
 
     public function migration(): array
     {
